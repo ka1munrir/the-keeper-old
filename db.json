@@ -1,32 +1,59 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "firstName": "first Name",
-        "lastName": "last Name",
-        "email": "email@email.com",
-        "userName": "username",
-        "password": "password",
-        "userId": "userid"
-      }
-    ],
-    "pingPongGames":[
-      {
-        "player1UserID" : "player",
-        "player2UserID" : "player",
-        "officiatorUserID" : "officiator",
-        "gameScore" : [[0, 0], [1, 0]],
-        "winner" : "winner"
-      }
-    ],
-    "cornHoleGames":[
-      {
-        "player1UserID" : "player",
-        "player2UserID" : "player",
-        "officiatorUserID" : "officiator",
-        "roundScore" : [[0, 0], [1, 0]],
-        "gameScore" : [[0, 0], [1, 0]],
-        "winner" : "winner"
-      }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "firstName": "first Name",
+      "lastName": "last Name",
+      "email": "email@email.com",
+      "userName": "username",
+      "password": "password",
+      "userId": "userid"
+    }
+  ],
+  "pingPongGames": [
+    {
+      "player1UserID": "player",
+      "player2UserID": "player",
+      "officiatorUserID": "officiator",
+      "gameScore": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "winner": "winner"
+    }
+  ],
+  "cornHoleGames": [
+    {
+      "player1UserID": "player",
+      "player2UserID": "player",
+      "officiatorUserID": "officiator",
+      "roundScore": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "gameScore": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "winner": "winner"
+    }
+  ]
 }

@@ -1,12 +1,13 @@
-// 'use client'
+'use client'
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
 // import { useRouter } from 'next/navigation';
-import getAllUsers from '../../../lib/getAllUsers';
-import addUser from '../../../lib/addUser';
 
-export default async function page() {
+import useSWR from 'swr';
+import * as UserAPI from '../../network/userAPI';
+
+export default function page() {
 
   const [signUpFirstName, setSignUpFirstName] = useState("");
   const [signUpLastName, setSignUpLastName] = useState("");
@@ -14,32 +15,38 @@ export default async function page() {
   const [signUpUsername, setSignUpUsername] = useState("");
   const [signUpPassword, setSignUpPassword] = useState("");
   const [signUpRepassword, setSignUpRepassword] = useState("");
-  const [users, setUsers] = useState<getUserType[]>([]);
     
-  useEffect(() => {
-      const fetchData = async () => {
-          const userData: getUserType[] = await getAllUsers();
-          setUsers(userData);
-      };
-
-      fetchData();
-  }, []);
+  let {data, error} = useSWR("empty", UserAPI.getUsers);
   
-
   function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault();
-
-    const userIdHelper = users.filter(user => user[`userName`].includes(signUpUsername));
+    data ?  null : data = [{
+      "id": 1,
+      "firstName": "first Name",
+      "lastName": "last Name",
+      "email": "email@email.com",
+      "userName": "username",
+      "password": "password",
+      "userId": "userid"
+    }];
+    
+    const userIdHelper = data.filter(user => user[`userName`].includes(signUpUsername));
     const userId = userIdHelper.length === 0 ? signUpUsername : `${signUpUsername}${userIdHelper.length}`
 
-    addUser({
-      "firstName": signUpFirstName,
-      "lastName": signUpLastName,
-      "email": signUpEmail,
-      "userName": signUpUsername,
-      "password": signUpPassword,
-      "userId": userId
-    })
+    if(signUpPassword === signUpRepassword){
+      UserAPI.addUser({
+        "firstName": signUpFirstName,
+        "lastName": signUpLastName,
+        "email": signUpEmail,
+        "userName": signUpUsername,
+        "password": signUpPassword,
+        "userId": userId
+      });
+    }
+
+
+
+
   }
 
   return (
@@ -96,6 +103,7 @@ export default async function page() {
             <br/>
             <button type="submit" className='text-zinc-900 bg-slate-500 rounded-lg p-4 text-lg w-full my-4'>Submit</button>
         </form>
+        <button onClick={() => console.log(data)}>adsfa</button>
     </div>
   )
 }

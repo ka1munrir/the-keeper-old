@@ -2,23 +2,33 @@
 import React from 'react'
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import getAllUsers from '../../../lib/getAllUsers';
+import useSWR from 'swr';
+import * as UserAPI from '../../network/userAPI';
+
 
 export default async function LogInPage() {
 
   const [logInUsername, setLogInUsername] = useState("");
   const [logInPassword, setLogInPassword] = useState("");
 
-  const userData: Promise<getUserType[]> = getAllUsers();
-  const users = await userData;
+  let {data, error} = useSWR("empty", UserAPI.getUsers);
 
   const router = useRouter(); 
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>){
     e.preventDefault();
+    data ?  null : data = [{
+      "id": 1,
+      "firstName": "first Name",
+      "lastName": "last Name",
+      "email": "email@email.com",
+      "userName": "username",
+      "password": "password",
+      "userId": "userid"
+    }];
 
-    users.forEach(user => {
-      if (user[`userName`] === logInUsername){
+    data.forEach(data => {
+      if (data[`userName`] === logInUsername){
 
       }
     })
