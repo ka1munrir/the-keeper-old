@@ -49,7 +49,7 @@ export default function userDashboard({params}: userDashProps) {
         />
         <h1 className='text-zinc-300 text-4xl'>{currentUser?.firstName}</h1>
         <h1 className='text-zinc-300 text-3xl'> {currentUser?.lastName}</h1>
-        <p className='text-zinc-600'>@{username}</p>
+        <p className='text-zinc-600'>@{currentUser?.userName}</p>
         <div>
             
         </div>

@@ -22,10 +22,10 @@ export default function page() {
     }
 
     return (
-        <div>
-            <h1 >Start Game</h1>
-            <form className='text-zinc-300' onSubmit={(e) => submitHandler(e)}>
-                <div>
+        <div className='flex flex-col items-center justify-center center w-screen vh-80'>
+            <h1 className='text-zinc-400 text-8xl mb-8'>Start Game</h1>
+            <form className='text-zinc-300 border-2 rounded-md p-4 mt-8' onSubmit={(e) => submitHandler(e)}>
+                <div className='flex justify-between'>
                     <input
                         className='rounded bg-slate-900 border p-2 font-thin my-4 text-lg wp-45'
                         type="text"

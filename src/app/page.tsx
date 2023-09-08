@@ -5,7 +5,6 @@ export default function Home() {
 
   return (
     <>
-      
       <main className="vh-80">
         <div className='flex flex-col justify-center items-center h-full'>
           <h1 className='text-zinc-400 text-6xl text-center w-full'>Welcome to Your <br/>Scorekeeping Hub</h1>
