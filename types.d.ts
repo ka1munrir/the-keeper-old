@@ -5,7 +5,6 @@ type getUserType = {
     "email": string,
     "userName": string,
     "password": string,
-    "userId": string
 }
 type addUserType = {
     "firstName": string,
@@ -13,9 +12,18 @@ type addUserType = {
     "email": string,
     "userName": string,
     "password": string,
-    "userId": string
 }
+
+
 type getPPGameType = {
+    "id": number,
+    "player1UserID" : string,
+    "player2UserID" : string,
+    "officiatorUserID" : string,
+    "gameScore" : number[][],
+    "winner" : string
+}
+type addPPGameType = {
     "player1UserID" : string,
     "player2UserID" : string,
     "officiatorUserID" : string,

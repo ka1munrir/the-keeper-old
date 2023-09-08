@@ -10,6 +10,12 @@
     align-items: center;
     color: rgb(244 244 245);
 }
+.cursor_stuff:hover{
+  cursor: pointer;
+}
+/* .score{
+  transform: scale(.75, 2);
+} */
 
 /* view hight classes */
 .vh-5 {
@@ -317,4 +323,164 @@
 
 .wp-95 {
   width: 95%;
+}
+
+.hvw-5 {
+  height: 5vw;
+}
+
+.hvw-10 {
+  height: 10vw;
+}
+
+.hvw-15 {
+  height: 15vw;
+}
+
+.hvw-20 {
+  height: 20vw;
+}
+
+.hvw-25 {
+  height: 25vw;
+}
+
+.hvw-30 {
+  height: 30vw;
+}
+
+.hvw-35 {
+  height: 35vw;
+}
+
+.hvw-40 {
+  height: 40vw;
+}
+
+.hvw-45 {
+  height: 45vw;
+}
+
+.hvw-50 {
+  height: 50vw;
+}
+
+.hvw-55 {
+  height: 55vw;
+}
+
+.hvw-60 {
+  height: 60vw;
+}
+
+.hvw-65 {
+  height: 65vw;
+}
+
+.hvw-70 {
+  height: 70vw;
+}
+
+.hvw-75 {
+  height: 75vw;
+}
+
+.hvw-80 {
+  height: 80vw;
+}
+
+.hvw-85 {
+  height: 85vw;
+}
+
+.hvw-90 {
+  height: 90vw;
+}
+
+.hvw-95 {
+  height: 95vw;
+}
+
+.hvw-100 {
+  height: 100vw;
+}
+
+.wvh-5 {
+  width: 5vh;
+}
+
+.wvh-10 {
+  width: 10vh;
+}
+
+.wvh-15 {
+  width: 15vh;
+}
+
+.wvh-20 {
+  width: 20vh;
+}
+
+.wvh-25 {
+  width: 25vh;
+}
+
+.wvh-30 {
+  width: 30vh;
+}
+
+.wvh-35 {
+  width: 35vh;
+}
+
+.wvh-40 {
+  width: 40vh;
+}
+
+.wvh-45 {
+  width: 45vh;
+}
+
+.wvh-50 {
+  width: 50vh;
+}
+
+.wvh-55 {
+  width: 55vh;
+}
+
+.wvh-60 {
+  width: 60vh;
+}
+
+.wvh-65 {
+  width: 65vh;
+}
+
+.wvh-70 {
+  width: 70vh;
+}
+
+.wvh-75 {
+  width: 75vh;
+}
+
+.wvh-80 {
+  width: 80vh;
+}
+
+.wvh-85 {
+  width: 85vh;
+}
+
+.wvh-90 {
+  width: 90vh;
+}
+
+.wvh-95 {
+  width: 95vh;
+}
+
+.wvh-100 {
+  width: 100vh;
 }

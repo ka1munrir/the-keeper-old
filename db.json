@@ -2,26 +2,54 @@
   "users": [
     {
       "id": 1,
-      "firstName": "first Name",
-      "lastName": "last Name",
+      "firstName": "firstName",
+      "lastName": "lastName",
       "email": "email@email.com",
       "userName": "username",
-      "password": "password",
-      "userId": "userid"
+      "password": "password"
+    },
+    {
+      "firstName": "Juan",
+      "lastName": "Ortiz-Acosta",
+      "email": "jdoa2003@protonmail.com",
+      "userName": "username1",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "firstName": "Sam",
+      "lastName": "Tiger",
+      "email": "tigerclaws@gmail.com",
+      "userName": "username3",
+      "password": "1",
+      "id": 3
+    },
+    {
+      "firstName": "Tri",
+      "lastName": "Hoang",
+      "email": "tri.hoang@gmail.com",
+      "userName": "trihoang",
+      "password": "ilovejuan",
+      "id": 4
+    },
+    {
+      "firstName": "Kamyar",
+      "lastName": "Taghavi",
+      "email": "kamyar.taghavi@gmail.com",
+      "userName": "kamtaghavi",
+      "password": "iloveboba",
+      "id": 5
     }
   ],
   "pingPongGames": [
     {
+      "id": 1,
       "player1UserID": "player",
       "player2UserID": "player",
       "officiatorUserID": "officiator",
       "gameScore": [
         [
           0,
-          0
-        ],
-        [
-          1,
           0
         ]
       ],
@@ -37,19 +65,11 @@
         [
           0,
           0
-        ],
-        [
-          1,
-          0
         ]
       ],
       "gameScore": [
         [
           0,
-          0
-        ],
-        [
-          1,
           0
         ]
       ],

@@ -1,7 +1,7 @@
 import api from "./axiosInstance";
 
 export async function getUsers(input: string){
-    const r = await api.get<getUserType[]>("users")
+    const r = await api.get<getUserType[]>("/users")
     return r.data;
 }
 
