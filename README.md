@@ -10,9 +10,6 @@ Are you tired of fumbling with pen and paper or struggling to find a dedicated s
 
 "The Keeper" is an exciting work in progress, and we have big plans for its future. Our dedicated team is actively working on enhancing the app's functionality, including the implementation of the leaderboard, game history, and support for additional sports and games. We're committed to making "The Keeper" your go-to scorekeeping app, no matter what sport you're passionate about.
 
-Join us on this journey, and together, we'll redefine the way you keep score!
-You can copy and paste this Markdown code into your README.md file.
-
 
 
 
